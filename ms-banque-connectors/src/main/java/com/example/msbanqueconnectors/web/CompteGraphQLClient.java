@@ -42,7 +42,6 @@ public class CompteGraphQLClient {
         return compteService.updateCompte(compteRequestDTO);
     }
 
-    //Consiste à changer les données
     @MutationMapping
     public String deleteCompte(@Argument Long id){
         compteService.deleteCompte(id);

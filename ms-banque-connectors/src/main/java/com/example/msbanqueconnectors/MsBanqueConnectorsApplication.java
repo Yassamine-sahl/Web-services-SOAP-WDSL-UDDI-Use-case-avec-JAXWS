@@ -19,11 +19,10 @@ public class MsBanqueConnectorsApplication {
     @Bean
     CommandLineRunner start(CompteService compteService){
         return args -> {
-            compteService.saveCompte(new CompteRequestDTO(null,new Date(),Math.random()*20000,"Euro"));
-            compteService.saveCompte(new CompteRequestDTO(null,new Date(),Math.random()*20000,"DH"));
-            compteService.saveCompte(new CompteRequestDTO(null,new Date(),Math.random()*20000,"Euro"));
-            compteService.saveCompte(new CompteRequestDTO(null,new Date(),Math.random()*20000,"DH"));
-
+            compteService.saveCompte(new CompteRequestDTO(null,new Date(),Math.random()*74555,"DH"));
+            compteService.saveCompte(new CompteRequestDTO(null,new Date(),Math.random()*15677,"DH"));
+            compteService.saveCompte(new CompteRequestDTO(null,new Date(),Math.random()*56000,"USD"));
+            compteService.saveCompte(new CompteRequestDTO(null,new Date(),Math.random()*90000,"USD"));
         };
     }
 

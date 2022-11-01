@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-//POJO Plain Old Java Object ==> simple classe java
 @WebService(serviceName = "BanqueWS")
 public class BanqueService {
     @Autowired
